@@ -37,3 +37,4 @@ console.log(typeof noteObject);
 console.log(noteObject);
 console.log(noteObject.title);
 console.log(noteObject.body);
+// This is June 30, 2017
