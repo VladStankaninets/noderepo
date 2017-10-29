@@ -15,21 +15,26 @@
 // console.log(personObject.name);
 // console.log(personObject.age);
 
-const fs = require('fs');
+const fs = require("fs");
 
 var originalNote = {
+<<<<<<< HEAD
     'title': 'Some title',
     'body': 'Some body'
+=======
+	title: "Some title",
+	body: "Some body"
+>>>>>>> 9f4384471092fe908418813d90b9dd678c270c44
 };
 
-// creating a string from the Javascript object above
+// creating a string from the JavaScript object above
 var originalNoteString = JSON.stringify(originalNote);
 
 //write originalNoteString as the file notes.json to the FileSystem
-fs.writeFileSync('notes.json', originalNoteString);
+fs.writeFileSync("notes.json", originalNoteString);
 
 // now read from the file notes.json into the temp string var
-var noteString = fs.readFileSync('notes.json');
+var noteString = fs.readFileSync("notes.json");
 
 // now convert noteString string into a Javascript object
 var noteObject = JSON.parse(noteString);
