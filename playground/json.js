@@ -18,8 +18,8 @@
 const fs = require('fs');
 
 var originalNote = {
-  title: 'Some title',
-  body: 'Some body'
+    'title': 'Some title',
+    'body': 'Some body'
 };
 
 // creating a string from the Javascript object above
