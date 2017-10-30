@@ -4,7 +4,7 @@
   "description": "Notes Application",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node_modules/.bin/mocha -w",
     "start": "node app.js"
   },
   "author": "Vlad Stankaninets",
@@ -14,10 +14,11 @@
   },
   "devDependencies": {
     "eslint": "^4.9.0",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "mocha": "^4.0.1"
   },
-  "repository" :
-  { "type" : "git",
-    "url" : "https://github.com/VladStankaninets/notes-node.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VladStankaninets/notes-node.git"
   }
 }
