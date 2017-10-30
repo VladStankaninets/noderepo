@@ -23,11 +23,12 @@ const myFunc3 = (a, b) => {
 
 };
 
-// Only works with one line (statement). See function myFunc3 above - do not forget curly barces and return with more than one statement. 
+// Only works with one line (statement). See function myFunc3 above - do not forget curly barces and return with more than one statement.
 const helloNow = () => 'This is an a one-liner arrow function with implicit return';
 
 const myObject = {
     'Name': 'Vlad',
+
     'sayHi': function sayHi () {
 
         // Or you can write the following to get this.Name bound (can NOT use arrow functions if you need 'this.***' bound)
