@@ -27,6 +27,7 @@ const myFunc3 = (a, b) => {
 const helloNow = () => 'This is an a one-liner arrow function with implicit return';
 
 const myObject = {
+
     'Name': 'Vlad',
 
     'sayHi': function sayHi () {

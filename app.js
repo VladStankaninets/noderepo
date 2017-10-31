@@ -11,6 +11,7 @@ console.log(func.myFunc2(3, 3));
 console.log(func.myFunc3(15, 16));
 console.log(func.myName);
 console.log(func.myObject.sayHi());
+console.log('Trying to access Name property in the myObject:', func.myObject.Name);
 console.log(func.helloNow());
 console.log(func2.TryThisConst);
 console.log(func2.sayHelloInEnglish());
