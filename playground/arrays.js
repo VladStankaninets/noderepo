@@ -15,9 +15,10 @@ var doubles = _.map(myArray, (x) => `${x * 2} Add this`);
 // });
 
 _.forEach(myArray, (elem) => console.log(_.upperCase(elem)));
-var numbers = _.filter(myArray, (elem) => typeof elem === 'number');
-var strings = _.filter(myArray, (elem) => typeof elem === 'string');
+var FilteredNumbers = _.filter(myArray, (elem) => typeof elem === 'number');
+var FilteredStrings = _.filter(myArray, (elem) => typeof elem === 'string');
+
 console.log(myArray);
 console.log(doubles);
-console.log(_.uniq(numbers));
-console.log(_.uniq(strings));
+console.log(_.uniq(FilteredNumbers));
+console.log(_.uniq(FilteredStrings));
