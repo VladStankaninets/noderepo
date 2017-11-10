@@ -12,11 +12,8 @@ module.exports = {
 
     },
 
-    sayHelloInSpanish () {
+    'sayHelloInSpanish': () => 'Hola'
 
-        return 'Hola';
-
-    }
 
 };
 

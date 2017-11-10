@@ -4,6 +4,7 @@ console.log('This is the functions.js file');
 
 var myName = 'Vladimir';
 
+
 // ES5
 const myFunc1 = function myFunc1 (a, b) {
 
