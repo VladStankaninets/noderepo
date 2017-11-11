@@ -7,9 +7,7 @@ module.exports = {
     TryThisConst,
 
     sayHelloInEnglish () {
-
         return 'Hello';
-
     },
 
     'sayHelloInSpanish': () => 'Hola'
