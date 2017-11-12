@@ -12,14 +12,14 @@ var fs = require('fs');
 // Chaining callbacks
 
 var myFile = 'input.txt';
-fs.readFile(myFile, 'utf8', function appendText (RDerr, txt) {
-    if (RDerr) return console.log(`From appendText function: There is a problem reading from ${myFile} \n\n${RDerr}`);
+fs.readFile(myFile, 'utf8', function ReadAppendText (READerr, filecontent) {
+    if (READerr) return console.log(`From ReadAppendText callback function: There is a problem reading from ${myFile} \n\n${READerr}`);
     else {
-        var txtnew = `${txt} \nAppended something!`;
-        fs.writeFile(myFile, txtnew, function notifyUser (WRerr) {
-            if (WRerr) return console.log(`From notifyUser function: There is a problem with writing in ${myFile} \n\n${WRerr}`);
+        var filecontentnew = `${filecontent} \nAppended something!`;
+        fs.writeFile(myFile, filecontentnew, function WriteNotifyUser (WRITEerr) {
+            if (WRITEerr) return console.log(`From ReadNotifyUser callback function: There is a problem with writing in ${myFile} \n\n${WRITEerr}`);
             // console.log('Appended text!');
-            console.log(`This is the new ${myFile} text: \n\n${txtnew}`);
+            console.log(`This is the new ${myFile} content: \n\n${filecontentnew}`);
         });
     }
 });

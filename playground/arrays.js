@@ -16,13 +16,21 @@ var map2doubles = _.map(myArray, (x) => `${x * 2} Original Element x 2`);
 
 var FilteredNumbers = _.filter(myArray, (elem) => typeof elem === 'number');
 var FilteredStrings = _.filter(myArray, (elem) => typeof elem === 'string');
-
+console.log('\n');
 console.log(myArray);
+console.log('\n');
 console.log(map2upper);
-// See explanation on difference between map and foreach below
+console.log('\n');
+// See an explanation of difference between map and foreach below
 _.forEach(myArray, (elem) => console.log(_.upperCase(elem)));
+console.log('\n');
+// Writing console.log new lines from forEach as one stream with process.stdout.write , is a delimiter
+_.forEach(myArray, (elem) => process.stdout.write(`${_.upperCase(elem)}, `));
+console.log('\n');
 console.log(map2doubles);
+console.log('\n');
 console.log(_.uniq(FilteredNumbers));
+console.log('\n');
 console.log(_.uniq(FilteredStrings));
 
 // The important difference between MAP and FOREACH is that map accumulates all of the results into a collection, whereas foreach returns nothing.
